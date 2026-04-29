@@ -23,26 +23,21 @@ export default function Hero() {
 
       <div className="mx-auto grid w-full max-w-6xl items-center gap-16 md:grid-cols-[1.2fr_1fr]">
         <div className="fade-up text-center md:text-left">
-          <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-accent">
-            {t.hero.hello}
-          </p>
+          <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-accent">{t.hero.hello}</p>
           <h1 className="gradient-text text-6xl font-semibold leading-[1.02] tracking-tight md:text-8xl">
-            Ittipon
+            Ittipon A
             <br />
             Chaiworn.
           </h1>
           <p className="mt-6 text-2xl font-medium md:text-3xl">
             <Typewriter phrases={t.hero.typed as unknown as string[]} />
           </p>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-muted md:mx-0 md:text-xl">
-            {t.hero.tagline}
-          </p>
+          <p className="mx-auto mt-6 max-w-xl text-lg text-muted md:mx-0 md:text-xl">{t.hero.tagline}</p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4 md:justify-start">
             <Magnetic>
               <a
                 href="#experience"
-                className="inline-block rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.05]"
-              >
+                className="inline-block rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.05]">
                 {t.hero.viewExp}
               </a>
             </Magnetic>
@@ -53,8 +48,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 download
                 className="inline-block rounded-full border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-foreground/5"
-                style={{ borderColor: "var(--border-strong)" }}
-              >
+                style={{ borderColor: "var(--border-strong)" }}>
                 ⬇ {t.hero.downloadCV}
               </a>
             </Magnetic>
@@ -62,8 +56,7 @@ export default function Hero() {
               <a
                 href="#contact"
                 className="inline-block rounded-full border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-foreground/5"
-                style={{ borderColor: "var(--border-strong)" }}
-              >
+                style={{ borderColor: "var(--border-strong)" }}>
                 {t.hero.contact}
               </a>
             </Magnetic>
@@ -75,7 +68,9 @@ export default function Hero() {
             <div className="ring-conic spin-slow absolute inset-0 rounded-full blur-[2px] opacity-90" />
             <div className="absolute inset-[6px] rounded-full bg-background" />
             <div className="pulse-glow absolute -inset-6 rounded-full bg-accent/20 blur-3xl" />
-            <div className="absolute inset-[14px] overflow-hidden rounded-full border" style={{ borderColor: "var(--border)" }}>
+            <div
+              className="absolute inset-[14px] overflow-hidden rounded-full border"
+              style={{ borderColor: "var(--border)" }}>
               <Image
                 src="/profile.jpg"
                 alt="Ittipon Chaiworn"
@@ -85,10 +80,14 @@ export default function Hero() {
                 className="object-cover object-[center_60%]"
               />
             </div>
-            <div className="gas-rise absolute -left-6 top-10 rounded-2xl border bg-surface/80 px-3 py-2 text-xs shadow-lg shadow-accent/10 backdrop-blur" style={{ borderColor: "var(--border)" }}>
+            <div
+              className="gas-rise absolute -left-6 top-10 rounded-2xl border bg-surface/80 px-3 py-2 text-xs shadow-lg shadow-accent/10 backdrop-blur"
+              style={{ borderColor: "var(--border)" }}>
               {t.hero.badge1}
             </div>
-            <div className="gas-rise-alt absolute -right-2 bottom-12 rounded-2xl border bg-surface/80 px-3 py-2 text-xs shadow-lg shadow-fuchsia-500/10 backdrop-blur" style={{ borderColor: "var(--border)" }}>
+            <div
+              className="gas-rise-alt absolute -right-2 bottom-12 rounded-2xl border bg-surface/80 px-3 py-2 text-xs shadow-lg shadow-fuchsia-500/10 backdrop-blur"
+              style={{ borderColor: "var(--border)" }}>
               {t.hero.badge2}
             </div>
           </div>
