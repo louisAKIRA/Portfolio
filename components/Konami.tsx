@@ -38,19 +38,16 @@ export default function Konami() {
   return (
     <div
       role="dialog"
-      className="fixed inset-0 z-[80] flex items-center justify-center bg-black/70 p-6 backdrop-blur"
-      onClick={() => setOpen(false)}
-    >
+      className="fixed inset-0 z-80 flex items-center justify-center bg-black/70 p-6 backdrop-blur"
+      onClick={() => setOpen(false)}>
       <div
         onClick={(e) => e.stopPropagation()}
-        className="fade-up max-w-md rounded-3xl border border-white/10 bg-surface p-8 text-center shadow-2xl"
-      >
+        className="fade-up max-w-md rounded-3xl border border-white/10 bg-surface p-8 text-center shadow-2xl">
         <h3 className="text-2xl font-semibold tracking-tight">{t.egg.title}</h3>
         <p className="mt-4 text-muted">{t.egg.body}</p>
         <button
           onClick={() => setOpen(false)}
-          className="mt-6 rounded-full bg-accent px-6 py-2 text-sm font-medium text-white"
-        >
+          className="mt-6 rounded-full bg-accent px-6 py-2 text-sm font-medium text-white">
           {t.egg.close}
         </button>
       </div>

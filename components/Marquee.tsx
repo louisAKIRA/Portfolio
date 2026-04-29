@@ -21,11 +21,11 @@ export default function Marquee() {
   return (
     <div className="relative overflow-hidden border-y border-white/5 bg-background py-8">
       <div
-        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-background to-transparent"
+        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-linear-to-r from-background to-transparent"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-background to-transparent"
+        className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-linear-to-l from-background to-transparent"
         aria-hidden
       />
       <div className="marquee flex w-max gap-12 whitespace-nowrap text-2xl font-medium text-muted">
